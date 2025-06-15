@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Study Quest</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="welcome-panel" class="panel">
+      <h1>Welcome!</h1>
+      <p>Ready to embark on your productive journey?</p>
+      <button onclick="startGame()">Start Quest</button>
+    </div>
+    <div id="main-app" class="panel hidden">
+      <div id="level-display">Level 1</div>
+      <div id="xp-container">
+        <div id="xp-bar">
+          <span id="xp-label">Level 1 — XP 60/100</span>
+        </div>
+      </div>
+      <div id="level-up-msg">LEVEL UP!</div>
+      <h2>Quest Log</h2>
+      <table id="quest-table">
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Class</th>
+            <th>Priority</th>
+            <th>Due Date</th>
+            <th>Status</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="quest-body">
+          <!-- JS will insert tasks here -->
+        </tbody>
+      </table>
+      <button onclick="addNewTask()">➕ Add New Task</button>
+      <button onclick="window.location.href='calendar.html'" class="button">
+        Calendar
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!--
+          <body>
+            <header>
+              <h1>Smart Study Planner</h1>
+            </header>
+            <aside>
+              <nav>
+                <ul>
+                  <li><a href="index.html">To Do</a></li>
+                  <li><a href="calendar.html">Calendar</a></li>
+                  <li><a href="#">Stats</a></li>
+                  <li><a href="#">Settings</a></li>
+                </ul>
+              </nav>
+            </aside>
+            <main>
+              <header>
+                <h1>Welcome! Time to Lock in Chat...</h1>
+                <button class="add task button">Add Task</button>
+              </header>
+
+              <section class="task-list">
+                <h2>Task Planner</h2>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Task</th>
+                      <th>Subject</th>
+                      <th>Due Date</th>
+                      <th>Priority</th>
+                      <th>Estimated Time</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>12.3 WS</td>
+                      <td>Math</td>
+                      <td>2025-05-18</td>
+                      <td>High</td>
+                      <td>1 hour</td>
+                    </tr>
+                    <tr>
+                      <td>Read Ch 7</td>
+                      <td>English</td>
+                      <td>2025-05-19</td>
+                      <td>Medium</td>
+                      <td>45 mins</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+            </main>
+            connecting to my javascript that I have to write
+            <script src="script.js">
+    </script>
+  </body>
+  -->

@@ -1,0 +1,206 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Press Start 2P", monospace;
+  background: url("./assets/background copy.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+.hidden {
+  display: none;
+}
+.panel {
+  text-align: center;
+  padding-top: 100px;
+  font-family: "Press Start 2P", monospace;
+  color: white;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.panel.animate-in {
+  opacity: 0;
+  transform: scale(0.95);
+}
+.panel.show {
+  display: block;
+  opacity: 1;
+  transform: scale(1);
+}
+
+button {
+  background-color: #4caf50;
+  border: 4px solid #2b8a3e;
+  padding: 15px 30px;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  font-family: "Press Start 2P", monospace;
+  margin-top: 20px;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+table {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  font-family: "Press Start 2P", monospace;
+  background-color: #222;
+  color: #fff;
+  box-shadow: 0 0 10px #000;
+}
+
+th,
+td {
+  border: 2px solid #444;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+th {
+  background-color: #444;
+}
+
+tr:nth-child(even) {
+  background-color: #333;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+button {
+  font-family: "Press Start 2P", monospace;
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: 4px solid #2b8a3e;
+  cursor: pointer;
+}
+
+#xp-container {
+  width: 90%;
+  height: 30px;
+  background: #333;
+  border: 2px solid #888;
+  margin: 20px auto;
+  position: relative;
+}
+
+#xp-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to right, #4caf50, #76ff03);
+  transition: width 0.4s ease;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+#xp-label {
+  font-size: 12px;
+  color: white;
+  pointer-events: none;
+}
+#level-up-msg {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Press Start 2P", monospace;
+  font-size: 24px;
+  color: gold;
+  text-shadow: 2px 2px #000;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px 30px;
+  border: 4px solid #fff;
+  display: none;
+  z-index: 1000;
+  animation: popFade 2s ease-out;
+}
+
+@keyframes popFade {
+  0% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+}
+
+#xp-bar.glow {
+  box-shadow: 0 0 15px 5px #76ff03;
+}
+#level-display {
+  font-family: "Press Start 2P", monospace;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 6px;
+  margin-top: 20px;
+  z-index: 5;
+}
+.delete-button {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #ff6666;
+  transition: transform 0.2s ease;
+}
+
+.delete-button:hover {
+  transform: scale(1.2);
+}
+#quest-body td,
+#quest-body input,
+#quest-body select {
+  font-family: "Press Start 2P", monospace;
+  font-size: 10px;
+  padding: 4px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+}
+input[type="date"] {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  font-family: "Press Start 2P", monospace;
+  font-size: 10px;
+  padding: 4px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+.button {
+  font-family: "Press Start 2P", monospace;
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 15px;
+  border: 4px solid #2b8a3e;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #4caf50;
+}
