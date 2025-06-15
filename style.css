@@ -4,7 +4,7 @@ html {
   padding: 0;
   height: 100%;
   font-family: "Press Start 2P", monospace;
-  background: url("./assets/background copy.jpg") no-repeat center center fixed;
+  background: url("background copy.jpg") no-repeat center center fixed;
   background-size: cover;
   color: #fff;
 }
